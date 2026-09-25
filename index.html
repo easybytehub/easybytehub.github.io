@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EasyByte en GitHub</title>
+<meta name="description" content="Repositorios públicos de EasyByte, cooperativa de desarrollo de software a medida: verifactu-lint, hullwork y docshield.">
+<link rel="canonical" href="https://easybytehub.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%234a5bd0'/%3E%3C/svg%3E">
+<style>
+:root{--tinta:#14161a;--suave:#5a6270;--fondo:#fff;--borde:#e4e7ec;--acento:#3646b5;--caja:#f7f8fa}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--tinta:#e8eaee;--suave:#9aa3b2;--fondo:#14161a;--borde:#2a2e36;--acento:#8d9bf0;--caja:#1b1e24}}
+:root[data-theme=dark]{--tinta:#e8eaee;--suave:#9aa3b2;--fondo:#14161a;--borde:#2a2e36;--acento:#8d9bf0;--caja:#1b1e24}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:3rem 16px 4rem}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .4rem;text-wrap:balance}
+.lede{color:var(--suave);margin:0 0 2.5rem}
+h2{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--suave);margin:2.5rem 0 1rem;font-weight:600}
+a{color:var(--acento)}
+a:focus-visible{outline:2px solid var(--acento);outline-offset:2px;border-radius:2px}
+.repo{border:1px solid var(--borde);border-radius:10px;padding:1.1rem 1.2rem;margin-bottom:.9rem;background:var(--caja)}
+.repo h3{margin:0 0 .35rem;font-size:1.05rem}
+.repo p{margin:0 0 .5rem}
+.meta{font-size:.82rem;color:var(--suave);font-variant-numeric:tabular-nums}
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--borde);font-size:.92rem;color:var(--suave)}
+</style>
+</head>
+<body>
+<main>
+<h1>EasyByte en GitHub</h1>
+<p class="lede">Cooperativa de desarrollo de software a medida. Publicamos libre lo que primero nos sirve a nosotros: herramientas de trabajo, no demos.</p>
+
+<h2>Repositorios públicos</h2>
+
+<article class="repo">
+<h3><a href="https://github.com/easybytehub/verifactu-lint">verifactu-lint</a></h3>
+<p>Comprueba en CI que los registros de facturación que genera tu SIF cumplen el RRSIF (RD 1007/2023 y Orden HAC/1177/2024). Le pasas el XML que produce tu código y te dice dónde incumple, citando el artículo. Solo lectura: no es un SIF.</p>
+<p class="meta">Python · Apache-2.0</p>
+</article>
+
+<article class="repo">
+<h3><a href="https://github.com/easybytehub/hullwork">hullwork</a></h3>
+<p>Convierte los errores de producción en pull requests en borrador, listos para revisar. Tu forja, tu gestor de errores, tu modelo — y una persona decidiendo cada merge. Pre-alfa.</p>
+<p class="meta">Python · autoalojado</p>
+</article>
+
+<article class="repo">
+<h3><a href="https://github.com/easybytehub/docshield">docshield</a></h3>
+<p>Protección de documentos.</p>
+<p class="meta">TypeScript · GPL-3.0</p>
+</article>
+
+<h2>Cómo se publica</h2>
+<p>Cada release publica su procedencia con <a href="https://docs.github.com/en/actions/security-guides/using-artifact-attestations">attestations de GitHub</a>, firmadas con OIDC efímero: se puede comprobar qué commit, qué workflow y qué runner produjeron cada artefacto. No hay ninguna clave privada custodiada por nadie.</p>
+
+<footer>
+<p>EasyByte Hub S. Coop. Mad. — <a href="https://easybyte.es">easybyte.es</a> · <a href="mailto:hola@easybyte.es">hola@easybyte.es</a></p>
+</footer>
+</main>
+</body>
+</html>
